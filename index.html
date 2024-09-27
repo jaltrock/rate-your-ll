@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Your Landlord</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <h1>Rate Your Landlord</h1>
+    <form id="ratingForm">
+        <label for="landlordName">Landlord Name:</label>
+        <input type="text" id="landlordName" required>
+        
+        <label for="rating">Rating (1-5):</label>
+        <input type="number" id="rating" min="1" max="5" required>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments"></textarea>
+        
+        <button type="submit">Submit Rating</button>
+    </form>
+
+    <h2>Ratings:</h2>
+    <ul id="ratingsList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

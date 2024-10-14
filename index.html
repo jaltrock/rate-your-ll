@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landlord Rating</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Rate Your Landlord</h1>
-        <form id="ratingForm">
-            <input type="text" id="landlordName" placeholder="Landlord's Name" required>
-            <select id="rating" required>
-                <option value="">Rate</option>
-                <option value="1">1 Star</option>
-                <option value="2">2 Stars</option>
-                <option value="3">3 Stars</option>
-                <option value="4">4 Stars</option>
-                <option value="5">5 Stars</option>
-            </select>
-            <textarea id="comment" placeholder="Leave a comment" required></textarea>
-            <button type="submit">Submit Rating</button>
-        </form>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    </head>
 
-        <h2>Ratings</h2>
-        <div id="ratingsDisplay"></div>
+<body>
+    <div class="header-container">
+    
+    <div class="logo-container">
+        <div id="icon">
+            <img id="" src="">
+        </div>
+        <h1>RYLL</h1>
+    </div>
+
+    <section class="header">
+       
+        <div class="nav" class="hidden">
+            <div class="nav-bar">
+                <a href="#search"><button class="header-button" id="header-button-1">Home</button></a>
+                <a href="rating-input-container"><button class="header-button" id="header-button-2">Ratings</button></a>
+            </div>
+        </div>
+
+        <div class="welcome-info">
+            <img id="welcome" src="">
+        </div>
+
+    </section>
     </div>
 
     <script src="script.js"></script>
